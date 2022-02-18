@@ -1,35 +1,56 @@
 *{
-    font-family: sans-serif;
-    font-size: 35px;
-    
-    
+font-family: Arial;    
+background-color: black; 
+color: white;
 }
 .banner {
-    width:100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     
 }
 
 .logo {
-    top: 80;
-    left: 80;
-    float: left;
+    position: relative;
+    /* height="300px" width="300px" */
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+   
+}
+.about {
+    text-align: center;
+}
+.navbar ul li{ 
+    text-align: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 30px; 
+    /* background-size: 50px; */
+}
+.navbar ul li a{ 
+    text-decoration: underline;
+    text-decoration-color: #ffee00da;
+    text-underline-offset: 10px;    
+    color: white;
+    background-size: 50px;
+    border-radius: 5px;
 }
 
-.navbar {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.contact {
+    list-style: none;
+    display: inline;
+    margin:auto;
+    align-items:center;
 }
+.contact img {
+    padding: 5px;
+    max-height: 40px;
+    max-width: 40px;
+}
+
+
+
+/* 
 
 .navbar ul li{
     list-style: none;
@@ -57,11 +78,10 @@
     transition: .4s;
     border-radius: 30px;
     left: 0;
-
 }
 
 .navbar ul li:hover::after{
     width: 100%;
     height: 50px;
     cursor:pointer ;
-}
+} */
