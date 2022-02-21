@@ -34,7 +34,7 @@ html {
 }
 div {
     font-size:large;
-    word-spacing: 10px;
+    word-spacing: 8px;
     line-height: 30px;
     text-align: center;
     margin: 40px;
@@ -46,6 +46,12 @@ div {
     display: none;
 }
 #about:target {
+    display: block;
+}
+#project {
+    display: none;
+}
+#project:target {
     display: block;
 }
 
@@ -70,14 +76,13 @@ div.about ul li img {
     
 }
 
+
+
+
 section {
     box-sizing: border-box;
-    padding: 15px;
-    max-width: 1200px;
     margin: auto;
-    display: inline-flex;
-    
-}
+} 
 section a {
     text-decoration: none;
     color: #2aadd4
@@ -92,30 +97,22 @@ section a:visited {
     text-decoration: none;
     color: #1f88c5
 }
-section p{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-}
+
 
 section img{
-    max-width: 300px;
+    width: 100%;    
     border-radius: 10px;
+}
 
-}
-.row {
-    margin: 0px -18px;
-    padding: 8px;
-}
- 
-.row > .column {
-    padding: 6px;
-}
  
 .column {
-    width: 310px;
+    position: relative;
+    width:30%;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 3;
     float: left;
+    display: flex;
+    padding: 30px;
 
 }
  
@@ -129,18 +126,7 @@ section img{
     padding: 10px;
     border: 2px solid gray;
     border-radius: 10px;
+    align-items:center;
+    
 }
-
-/* window size 850 width set */
-@media screen and (max-width: 850px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* window size 400 width set */
-@media screen and (max-width: 400px) {
-    .column {
-        width: 100%;
-    }
 
