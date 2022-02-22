@@ -38,9 +38,11 @@ div {
     line-height: 30px;
     text-align: center;
     margin: 40px;
-    padding: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
+
 
 #about {
     display: none;
@@ -57,25 +59,24 @@ div {
 
 .me {
     max-width: 300px;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
+    float: right;
+    padding: 15px;
+
 }
 
 div.about ul li {
     list-style: none;
     display: inline-block;
-    align-items:center;
-    justify-content: space-between;
-
 
 }
 div.about ul li img {
     list-style: none;
-    max-width: 30px;
-    margin:auto;
+    max-width: 40px;
+    margin: auto;
     
 }
-
 
 
 
@@ -107,7 +108,7 @@ section img{
  
 .column {
     position: relative;
-    width:30%;
+    width:350px;
     -webkit-box-orient: horizontal;
     -webkit-line-clamp: 3;
     float: left;
