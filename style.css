@@ -53,6 +53,15 @@ div {
     display: block;
 }
 
+.mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+
 
 .me {
     max-width: 300px;
@@ -101,14 +110,14 @@ section img{
 }
 
 .row {
-    margin:auto ;
+    margin: auto ;
 }
 
 
  
 .column {
     float: left;
-    width: 30%;
+    width: 350px;
 
 }
  
