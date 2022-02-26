@@ -23,14 +23,16 @@ html {
     margin: 20px;
     font-size: 30px; 
     /* background-size: 50px; */
+    padding: auto;
 }
 .navbar ul li a{ 
     text-decoration: underline;
     text-decoration-color: #ffee00da;
-    text-underline-offset: 10px;    
+    text-underline-offset:10px;    
     color: white;
     background-size: 50px;
     border-radius: 5px;
+    line-height: 40px;
 }
 div {
     font-size:large;
@@ -44,36 +46,30 @@ div {
 }
 
 
-#about {
+#about, #project, #resume {
     display: none;
 }
-#about:target {
+#about:target, #project:target, #resume:target {
     display: block;
 }
-#project {
-    display: none;
-}
-#project:target {
-    display: block;
-}
+
 
 .me {
     max-width: 300px;
     border-radius: 30px;
-    overflow: hidden;
     float: right;
-    padding: 15px;
-
+    padding-top: 15px;
 }
 
-div.about ul li {
+div.contact ul li {
     list-style: none;
     display: inline-block;
 
 }
-div.about ul li img {
-    list-style: none;
-    max-width: 40px;
+div.contact ul li img {
+    padding: 5px;
+    width: 50px;
+    height: 48px;
     margin: auto;
     
 }
@@ -82,7 +78,6 @@ div.about ul li img {
 
 section {
     box-sizing: border-box;
-    margin: auto;
 } 
 section a {
     text-decoration: none;
@@ -105,29 +100,30 @@ section img{
     border-radius: 10px;
 }
 
+.row {
+    margin:auto ;
+}
+
+
  
 .column {
-    position: relative;
-    width:350px;
-    -webkit-box-orient: horizontal;
-    -webkit-line-clamp: 3;
     float: left;
-    display: flex;
-    padding: 30px;
+    width: 30%;
 
 }
  
 .row:after {
     content: "";
     display: table;
-    clear: both;
+    clear:both;
 }
 
 .content {
     padding: 10px;
     border: 2px solid gray;
     border-radius: 10px;
-    align-items:center;
     
 }
 
+  
+  
