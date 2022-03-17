@@ -1,0 +1,138 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.795); 
+    color: white;
+    padding: auto;
+}
+.banner {
+    
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;   
+}
+.text {
+    float: left;
+}
+.navbar ul li{ 
+    text-align: center;
+    list-style: none;
+    margin: 20px;
+    font-size: 30px; 
+    /* background-size: 50px; */
+    padding: auto;
+}
+.navbar ul li a{ 
+    text-decoration: underline;
+    text-decoration-color: #ffee00da;
+    text-underline-offset:10px;    
+    color: white;
+    background-size: 50px;
+    border-radius: 5px;
+    line-height: 40px;
+}
+div {
+    font-size:large;
+    word-spacing: 8px;
+    line-height: 30px;
+    text-align: center;
+    margin: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+#about, #project, #resume {
+    display: none;
+}
+#about:target, #project:target, #resume:target {
+    display: block;
+}
+
+.mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+
+
+.me {
+    max-width: 300px;
+    border-radius: 30px;
+    float: right;
+    padding-top: 15px;
+}
+
+div.contact ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+div.contact ul li img {
+    padding: 5px;
+    width: 50px;
+    height: 48px;
+    margin: auto;
+    
+}
+
+
+
+section {
+    box-sizing: border-box;
+} 
+section a {
+    text-decoration: none;
+    color: #2aadd4
+}
+section a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;    
+    color: #2aadd4;
+    
+}
+section a:visited {
+    text-decoration: none;
+    color: #1f88c5
+}
+
+
+section img{
+    width: 100%;    
+    border-radius: 10px;
+}
+
+.row {
+    margin: auto ;
+}
+
+
+ 
+.column {
+    float: left;
+    width: 350px;
+
+}
+ 
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.content {
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    
+}
+
+  
+  
