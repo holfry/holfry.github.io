@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For Prints</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 18px;
-      transition: background-color 0.3s;
-    }
-    a:hover {
-      background-color: #333;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protected Link</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a href="https://drive.google.com/drive/folders/1eQaobEQ1e6IGCSRUhGPCi83qAOJDcbuH?usp=sharing">For prints</a>
+  <div class="container">
+    <h2>Enter password to continue</h2>
+    <input type="password" id="passwordInput" placeholder="Password" />
+    <button id="submitBtn">Submit</button>
+    <p id="errorMessage"></p>
+    <a id="hiddenLink" href="#" target="_blank">For prints</a>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
-
