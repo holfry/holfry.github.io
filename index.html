@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protected Page</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Button Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            text-align: center;
+        }
+
+        .print-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .print-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Enter password to continue</h2>
-    <input type="password" id="passwordInput" placeholder="Password" />
-    <button id="submitBtn">Submit</button>
-    <p id="errorMessage"></p>
-    <div id="linkContainer"></div>
-  </div>
-
-  <script src="main.js"></script>
+    <div class="container">
+        <a href="https://drive.google.com/drive/u/1/folders/1eQaobEQ1e6IGCSRUhGPCi83qAOJDcbuH" class="print-button">Print</a>
+    </div>
 </body>
 </html>
