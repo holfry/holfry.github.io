@@ -18,7 +18,7 @@ submitBtn.addEventListener("click", () => {
     // Create the link dynamically
     const link = document.createElement("a");
     link.textContent = "For prints";
-    link.href = "#"; // <-- Replace this with your actual link
+    link.href = "https://drive.google.com/drive/u/1/folders/1eQaobEQ1e6IGCSRUhGPCi83qAOJDcbuH"; // <-- Replace this with your actual link
     link.target = "_blank";
     link.classList.add("fade-in");
 
